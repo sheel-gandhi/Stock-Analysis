@@ -4,15 +4,15 @@ Analyzing Green Energy Stocks in VBA based on Financial Data
 
 ## Overview of Project
 
-Steve’s parents are interested in investing in Green Energy Stock and Steve needs our help in analysing various stock options. We analyzed DAQO and 11 other stocks with its daily volume and percentage change in prices to determine the performance of each stock. Now, Steve wants to expand the dataset to include the entire stock market to find better investment options for his parents.
+Steve’s parents are interested in investing in Green Energy Stocks and Steve needs our help in analysing various stock options. We analyzed DAQO and 11 other stocks with its daily volume and percentage change in prices to determine the performance of each stock. Now, Steve wants to expand the dataset to include the entire stock market to find better investment options for his parents.
 
-With the current code, the outcome of a dozen stocks can be achieved, however it may be difficult to analyze thousands of stocks with its daily information on volume, starting price, ending price and percentage change in prices. This can become complicated as well as time-consuming. 
+With the current code, it is possible to analyze and get outcomes for few stocks. However, it may be difficult to analyze thousands of stocks with its daily information on volume, starting price, ending price and percentage change in prices. This can become complicated as well as time-consuming. 
 
-To overcome this hurdle, we will be refactoring the code to make it more efficient. We will be initiating all variables and then looping the data once to get the same results we got from our original code. At the end, we will be comparing run time of both our codes to determine if the refactored code runs faster and thereby help Steve and his parents in finding a stock for investment.
+To overcome this hurdle, we will be refactoring the code to make it more efficient. We will be initializing all variables and then looping the data once to get the same results we got from our original code. At the end, we will be comparing run time of both our codes to determine if the refactored code runs faster and thereby help Steve and his parents in finding a stock for investment.
 
 ## Original Code and its Timelapse
 
-In our original code, first we initialised our tickers and looped the data through each ticker. Then, we created another loop within the main loop (nested loops). This loop  will go through each row in dataset and check if the row is related to the specified ticker and if it is the desired ticker, then totalVolume variable will increase and we can get the startingPrice, endingPrice and percentage change in price to determine performance of that stock.  Below is a screen shot of the original code.
+In our original code, first we initialised our tickers and looped the data through each ticker. Then, we created another loop within the main loop (nested loops). This loop will go through each row in dataset and check if the row is related to the specified ticker and if it is the desired ticker, then totalVolume variable will increase and we can get the startingPrice, endingPrice and percentage change in price to determine performance of that stock.  Below is a screen shot of the original code.
  
 
 ![Original_Code_Screenshot](https://user-images.githubusercontent.com/108366412/178903122-9732a525-fa27-450c-9411-6ca65ec46178.png)
@@ -57,12 +57,12 @@ With the refactored code, we were able to run the code within 0.4 seconds on an 
 
 ## Disadvantages of Refactoring
 
-  * Outcome of the analysis is compromised if vital steps are removed during refactoring
+  * Outcome of the analysis is compromised if vital steps are removed during refactoring.
   
-  * The whole pseudocode needs to be altered and in doing so, code can get more complex and difficult to understand
+  * The whole pseudocode needs to be altered and in doing so, code can get more complex and difficult to understand.
   
-  * Sometimes it is not worth the time to refactor the code with small datasets
+  * Sometimes it is not worth the time to refactor the code with small datasets.
 
 ## Disadvantage pertaining to VBA script
 
-Although in the VBA script, the loop runs once and in a shorter timeframe we get output, the code gets difficult to write and understand with the initialization of tickerIndex and the usage of tickerIndex variable in each of the if then condition statements to find the outcomes.
+Although in the refactored VBA script, the loop runs once and it takes shorter timeframe to get the outputs, the code gets difficult to write and understand with the initialization of tickerIndex and the usage of tickerIndex variable in each of the if then condition statements to find the outcomes.
