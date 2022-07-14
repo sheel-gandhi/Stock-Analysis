@@ -10,7 +10,7 @@ With the current code, it is possible to analyze and get outcomes for few stocks
 
 To overcome this hurdle, we will be refactoring the code to make it more efficient. We will be initializing all variables and then looping the data once to get the same results we got from our original code. At the end, we will be comparing run time of both our codes to determine if the refactored code runs faster and thereby help Steve and his parents in finding a stock for investment.
 
-## Original Code and its Timelapse
+## Original Code and its Performance
 
 In our original code, first we initialised our tickers and looped the data through each ticker. Then, we created another loop within the main loop (nested loops). This loop will go through each row in dataset and check if the row is related to the specified ticker and if it is the desired ticker, then totalVolume variable will increase and we can get the startingPrice, endingPrice and percentage change in price to determine performance of that stock.  Below is a screen shot of the original code.
  
@@ -26,7 +26,7 @@ The code ran successfully with the given data. However, due to the nested loop, 
 
 ![Original_Timelapse_2018](https://user-images.githubusercontent.com/108366412/178903206-e4d21372-d752-45ce-9fb2-bb13e2d3c61a.png)
 
-## Refactored Code and its performance:
+## Refactored Code and its performance
 
 Our main purpose for refactoring the original code is to make it easy to follow and run it faster. Applying our VBA knowledge in the Starter code provided will help us accomplish that goal. The dataset, variables and the required outcomes will be the same as original code.
 
