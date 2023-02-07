@@ -4,6 +4,13 @@ Analyzing Green Energy Stocks in VBA based on Financial Data
 
 ## Overview of Project
 
+* **Create a VBA macro that can trigger pop-ups and inputs, read and change cell values, and format cells.**
+* **Use for loops and conditionals to direct logic flow.**
+* **Use nested for loops.**
+* **Apply coding skills such as syntax recollection, pattern recognition, problem decomposition, and debugging.**
+
+## Purpose
+
 Steve’s parents are interested in investing in Green Energy Stocks and Steve needs our help in analysing various stock options. We analyzed DAQO and 11 other stocks with its daily volume and percentage change in prices to determine the performance of each stock. Now, Steve wants to expand the dataset to include the entire stock market to find better investment options for his parents.
 
 With the current code, it is possible to analyze and get outcomes for few stocks. However, it may be difficult to analyze thousands of stocks with its daily information on volume, starting price, ending price and percentage change in prices. This can become complicated as well as time-consuming. 
